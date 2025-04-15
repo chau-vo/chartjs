@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<TITLE> Hello </TITLE>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+<div>
+  <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ['Lasagna', 'Sushi', 'Pizza', 'Spaghetti', 'Pho', 'Other'],
+      datasets: [{
+        label: 'Favorite Food',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+
+<h1>Hi we're Team 1</h1>
+<p> Some text abskfsdkvndkshe </p>
+</body>
